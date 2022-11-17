@@ -34,6 +34,6 @@
  ## Contributors
  * * *
  * ### Ayub: [ayyuubf321@gmail.com](https://gmail.google.com "gmail")
- * ### Max: [maxsprenkels@student.rocva.nl](https://gmail.google.com "gmail")
+ * ### Max: [max.sprenkels@student.rocva.nl](https://gmail.google.com "gmail")
  * ### Dylan: [dylan.bookelman@student.rocva.nl](https://gmail.google.com "gmail")
  * ### Dimitri: [dimi.vandervanderlaan@student.rocva.nl](https://gmail.google.com "gmail")
