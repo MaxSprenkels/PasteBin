@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.php" class="logo">
+      <img src="img/logo_transparent.png" alt="logo">
+    </a>
+    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.php">+Paste</a></li>
+        <li><a href="team.php">Team</a></li>
+      </ul>
+    </nav>
+    <button id="kleur-knop" onclick="changeTheme()">Dark mode</button>
+  </header>
+
+  <script>
+    let target = document.body;
+    let theme = localStorage.getItem("theme");
+    if (theme != null) {
+      target.classList.toggle("theme-dark");
+    }
+    function changeTheme() {
+      let theme = localStorage.getItem("theme");
+      if (theme != null) {
+        localStorage.removeItem("theme");
+      } else {
+        localStorage.setItem("theme", "theme-dark");
+      }
+      target.classList.toggle("theme-dark");
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,210 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Comforter&family=IBM+Plex+Mono:wght@500&family=Lobster&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=IBM+Plex+Mono:wght@500&family=Lobster&family=Montserrat:wght@500&family=Roboto+Mono:ital,wght@1,300&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=IBM+Plex+Mono:wght@500&family=Lobster&family=Montserrat:wght@500&family=Roboto+Mono:ital,wght@1,300&family=Zilla+Slab:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#knop {
+  background: linear-gradient(35deg, rgb(0, 145, 255), purple);
+  color: white;
+  border: none;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 370px;
+  margin-bottom: 10px;
+  width: 150px;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#knop:hover {
+  cursor: pointer;
+}
+body {
+  background-color: gray;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+a:hover {
+  color: black;
+}
+
+.text-vak {
+  resize: none;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.text-p {
+margin-top: 10px;
+margin-left: 10px;
+font-family: 'Lobster', cursive;
+font-weight: 500;
+font-size: 25px;
+color: rgb(17, 16, 16);
+text-decoration: none;
+
+}
+.CodeMirror {
+  height: 700px;
+  width: 700px;
+  border-radius: 6px;
+  padding-top: 3px;
+  border: 1px solid #ddd;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.Choice {
+  font-size: 15px;
+  font-weight: 600px;
+  margin-right: 20px;
+  margin-left: 10px;
+  font-family: 'Roboto Mono', monospace;
+}
+.post_label {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600px;
+  font-family: 'Roboto Mono', monospace;
+}
+#post_select {
+  margin-left: 72px;
+  font-size: 15px;
+  font-weight: 700px;
+  font-family: 'Roboto Mono', monospace;
+}
+.title {
+  width: 150px;
+  height: 2em;
+  padding: 12px 20px;
+  margin: 12px 0 0 78px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* <select> styles */
+select {
+  /* Reset */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  font-weight: 600px;
+  font-family: 'Roboto Mono', monospace;
+  width: 150px;
+  height: 1.9em;
+  text-align: center;
+  padding: 0 4em 0 1em;
+  background: linear-gradient(35deg, rgb(0, 145, 255), rgb(141, 93, 141));
+  color: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-top: 10px;
+}
+select option {
+  color: inherit;
+  background-color: #320a28;
+}
+select:focus {
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+/* styling side bar*/
+
+.content_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.side_bar {
+  margin-top: 40px;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+h1 {
+  color: rgb(44, 24, 127);
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+table {
+  font-size: 17px;
+  font-weight: 300px;
+  font-family: 'Zilla Slab', serif;
+}
+table th,
+table td {
+  padding: 0.25em 0.4em;
+  text-align: left;
+}
+table th:nth-child(2),
+table td:nth-child(2) {
+  text-align: right;
+}
+table td {
+  background-color: #eee;
+}
+table th {
+  background-color: rgb(53, 106, 180);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.zigzag {
+  border-collapse: separate;
+  border-spacing: 0.25em 1em;
+}
+.zigzag tbody tr:nth-child(odd) {
+  transform: rotate(2deg);
+}
+.zigzag thead tr,
+.zigzag tbody tr:nth-child(even) {
+  transform: rotate(-2deg);
+}
+/* style link of side-bar */
+.title_link {
+  color: black;
+  padding-left: 5px;
+  font-size: 17px;
+  font-weight: 300px;
+  font-family: 'Zilla Slab', serif;
+}
+
+.title_link:hover{
+  background-color: rgb(255, 255, 255);
+}
+i {
+  padding-right: 6px;
+}
+.public {
+  color: black;
+}
